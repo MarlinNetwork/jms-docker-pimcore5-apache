@@ -1,4 +1,2 @@
-FROM scratch
-COPY hello /
-CMD ["/hello"]
+FROM hello-world
 
