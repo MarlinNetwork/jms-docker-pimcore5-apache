@@ -47,6 +47,7 @@ RUN apt-get update && apt-get install -y lsb-release \
       && ln -s /opt/mozjpeg/bin/cjpeg /usr/bin/cjpeg \
       && cd .. \
       && rm -rf mozjpeg \
+    && pip3 install setuptools \
     && git clone https://github.com/wavexx/facedetect \
       && pip3 install numpy opencv-python \
       && cd facedetect \
