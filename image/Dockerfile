@@ -76,6 +76,7 @@ RUN apt-get update && apt-get install -y lsb-release \
       && cd .. \
       && rm -rf advancecomp-1.17 \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+    &&b composer self-update 1.4.1 \
     \
     && a2enmod ssl \
       && mkdir /etc/apache2/ssl \
